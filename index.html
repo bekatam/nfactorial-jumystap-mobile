@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Find jobs for junior developers</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="nav">
+            <div class="nav__leftside">
+                <img src="img/logo.png" alt="logo">
+                <div class="text text_logo">JumysTap</div>
+            </div>
+            <div class="nav__rightside">
+                <a class="text hidden" href="#main">Home</a>
+                <a class="text hidden" href="#footer">About us</a>
+                <a class="text hidden" href="#hiw">How it works?</a>
+                <a class="button text text_started">Get Started</a>
+            </div>
+        </div>
+        <div class="main__content">
+            <img src="img/head.jpg" alt="head"  class="image">
+            <h1 class="text text_header">Get hired for your skills, not experience</h1>
+            <div class="text text_subheader">The best tool to start your career journey with. Get connected with the best companies — just share your CV to get started.</div>
+            <button class="button button_how-it-works">How It Works?</button>
+        </div>
+    </div>
+    <div class="how-it-works" id="hiw">
+        <div class="text text_hiw_descr">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="text text_hiw_header">How It Works?</div>
+        <div class="grid-container">
+            <img src="img/one.png" alt="one" id="first">
+            <img src="img/two.png" alt="two" id="fourth">
+            <img src="img/three.png" alt="three" id="seventh">
+            <div class="text text_hiw_title" id="second">Show your best skills</div>
+            <div class="text text_hiw_title" id="fifth">Searh for the best match</div>
+            <div class="text text_hiw_title" id="eighth">Find the best opportunity</div>
+            <div class="text text_hiw_subtitle" id="third">Upload Your CV</div>
+            <div class="text text_hiw_subtitle" id="sixth">Lorem, ipsum dolor.</div>
+            <div class="text text_hiw_subtitle" id="nineth">Lorem ipsum dolor sit.</div>
+        </div>
+    </div>
+    <div class="started">
+        <div class="text text_started_header">Lets Get Started</div>
+        <div class="text text_started_subheader">The best tool to start your career journey with. Get connected with the best companies — just share your CV to get started.</div>
+        <div class="started__wrapper">
+            <div class="started__search">
+                <img src="img/Search.png" alt="search">
+                <input type="text" placeholder="Search for job by keywords">
+            </div>
+            <button class="button button_search">Find Job</button>
+        </div>
+    </div>
+    <div class="cv">
+        <img src="img/bottom.jpg" alt="bottom" class="image image_bottom">
+        <div class="cv__wrapper">
+            <div class="text text_cv_header">Upload your CV</div>
+            <div class="text text_cv_subheader">The best tool to start your career journey with. Get connected with the best companies — just share your CV to get started.</div>
+            <button class="button button_cv" onclick="document.getElementById('getFile').click()">
+                <input type='file' id="getFile" style="display:none">
+                <img src="img/arrow.png" alt="arrow">
+                Upload
+            </button>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer__wrapper">
+            <div class="socials">
+                <a class="text text_socials" href="#main">Home</a>
+                <a class="text text_socials" href="#footer">About us</a>
+                <a class="text text_socials" href="#hiw">How it works</a>
+                <a href="https://twitter.com/" target="_blank"><img src="img/Twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/Instagram.png" alt="inst"></a>
+                <div class="text text_credits">Credits: photos from <a href="https://unsplash.com/">Unsplash.com</a>, icons from <a href="https://icons8.com/">Icons8</a>, graphics from <a href="craftwork.design">craftwork.design</a>, font Kanit from <a href="https://fonts.google.com/">fonts.google</a>.</div>
+            </div>
+        </div>
+        <div class="text text_bottom">Made with ✨❤️ at nFactorial in 2023.</div>
+    </footer>
+</body>
+</html>

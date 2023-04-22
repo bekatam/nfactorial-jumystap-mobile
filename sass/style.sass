@@ -1,0 +1,243 @@
+$button: #712FFF
+$txt: #081E34
+body
+    margin: 0
+    padding: 0
+    background: #F1F1F1
+
+.main 
+    padding: 20px 87px 42px 80px
+    height: 682px
+
+.image
+    height: 420px
+    position: absolute
+    right: 81px
+    top: 162px
+    &_bottom
+        left: 80px
+        top: 0      
+
+.nav
+    display: flex
+    justify-content: space-between
+    &__leftside
+        display: flex
+        align-items: center
+        img
+            margin-right: 10px
+            height: 22px
+    &__rightside
+        display: flex
+        align-items: center
+        a
+            text-decoration: none
+            margin-right: 40px
+            &:last-child
+                margin-right: 0
+            &:hover
+                text-decoration: underline
+                &:last-child
+                    text-decoration: none
+        
+.text
+    font-family: 'Kanit', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    color: #000
+    &_logo
+        font-size: 18px
+        text-transform: capitalize
+    &_started
+        transition: 0.4s background
+        &:hover
+            color: #fff
+            cursor: pointer
+            background: $button
+    &_header
+        display: inline-block
+        width: 445px    
+        font-weight: 700
+        font-size: 54px
+        text-align: left
+        line-height: 64px
+        margin: 147px 0 32px 0
+    &_subheader
+        width: 478px
+        text-align: left
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 48px
+    &_hiw
+        &_descr
+            font-weight: 400
+            font-size: 12px
+            margin-bottom: 12px
+        &_header
+            font-weight: 700
+            font-size: 54px
+            line-height: 56px
+            margin-bottom: 86px
+        &_title
+            font-weight: 700
+            font-size: 24px
+        &_subtitle
+            font-size: 16px
+    &_started
+        &_header
+            font-size: 54px
+            line-height: 64px
+            text-align: left
+            margin-bottom: 32px
+        &_subheader
+            text-align: left
+            width: 478px
+            font-size: 16px
+            margin-bottom: 32px
+    &_cv
+        &_header
+            text-align: left
+            font-size: 54px
+            margin-bottom: 32px
+        &_subheader
+            text-align: left
+            width: 478px
+            font-size: 16px   
+            margin-bottom: 32px
+    &_socials
+        font-size: 14px
+        color: $txt
+        display: inline-block
+        margin-right: 35px
+        font-family: Inter, sans-serif
+    &_credits
+        font-family: 'Inter'
+        font-weight: 500
+        font-size: 14px
+        color: $txt
+        opacity: 0.5
+        margin-left: 554px
+        text-align: right
+        a
+            text-decoration: none
+            color: $txt
+    &_bottom
+        margin-top: 50px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        color: $txt
+        text-align: right
+
+                     
+.button
+    width: 102px
+    height: 38px
+    background: rgba(8, 30, 52, 0.12)
+    font-family: Kanit, sans-serif
+    border-radius: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: none
+    font-size: 14px
+    cursor: pointer
+    &_how-it-works
+        width: 144px
+        height: 50px
+        background: $button
+        color: #fff
+    &_search
+        background: $button
+        height: 50px
+        width: 106px
+        color: #fff
+        margin-left: 32px
+        height: 50px
+    &_cv
+        background: $button
+        color: #fff
+        justify-content: center
+        height: 50px
+        img
+            margin-right: 8px
+        
+
+.how-it-works
+    height: 462px
+    padding: 103px 80px 103px 131px
+    background: #E1DEE7
+    border-radius: 32px
+
+.grid-container
+    display: grid
+    height: 186px
+    width: 100%
+    grid-template-rows: 2fr 1fr 1fr 
+    grid-template-columns: repeat(3, 1fr) 
+    justify-items: start
+    img
+        height: 64px
+
+.started
+    height: 486px
+    padding: 100px 603px 80px 80px
+    &__wrapper
+        display: flex
+    &__search
+        display: flex
+        padding-left: 13px
+        height: 50px
+        width: 619px 
+        background: #FFFFFF
+        border-radius: 12px
+        img
+            height: 24px
+            transform: translateY(50%)
+        input
+            border: 0
+            width: 100%
+            padding-left: 12px
+            border-radius: 12px
+            font-family: Kanit, sans-serif
+            font-size: 16px
+            opacity: 0.2
+            &:focus
+                outline: none
+
+.cv
+    position: relative
+    height: 548px
+    &__wrapper
+        margin-left: 907px
+        padding-top: 103px
+
+footer
+    height: 122px
+    padding: 42px 80px 32px 80px
+    background: #fff
+    border-radius: 15px
+    border-radius: 32px 32px 0px 0px
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+    .socials
+        display: flex
+        img
+            margin-right: 35px
+            border-radius: 7px
+            &:hover
+                background: cyan  
+    .text_credits
+        a
+            text-decoration: underline     
+
+@import "media"
